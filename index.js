@@ -1,27 +1,13 @@
 var recipes = {}
-function updateObjectWithKeyAndValue(obj, key, value) {
-
-  return Object.assign({}, obj, { [key]: value })
+function updateObjectWithKeyAndValue(object, key, value){
+  return Object.assign({}, object, {[key]: value})
 }
-function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
-  obj[key] = value
-
-  return obj
-}
-const recipe = { eggs: 3 }
-destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
-
-var meal = {random: "hello"}
-function updateObjectWithKeyAndValue(obj, key, value) {
-  return Object.assign({}, obj, { [key]: value})
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
+  object[key] = value
+  return object
 }
 function deleteFromObjectByKey(object, key){
-  newObj = delete object.key
-  return newObj
-}
-function deleteFromObjectByKey(object, key){
-  var newObj =  Object.assign({}, object)
-  delete newObj[key]
+  var newObj = Object.assign({}, delete[key])
   return newObj
 }
 function destructivelyDeleteFromObjectByKey(object, key){
